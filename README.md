@@ -1,7 +1,7 @@
 
 # Coloris
 
-![lzt theme](https://raw.githubusercontent.com/lzt-upgrade/coloris-lzt-theme/raw/images/colorpicker.png)
+![lzt theme](https://github.com/lzt-upgrade/coloris-lzt-theme/raw/main/images/colorpicker.png)
 
 A lightweight and elegant JavaScript color picker written in vanilla ES6.  
 Convert any text input field into a color field.
