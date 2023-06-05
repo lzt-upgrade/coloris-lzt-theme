@@ -575,3 +575,55 @@ input.clr-color:focus {
 .clr-pill .clr-hue {
   margin-top: 20px;
 }
+
+/** Lolzteam theme (by Toil) **/
+
+.clr-lzt {
+  background-color: #272727;
+}
+
+.clr-lzt .clr-segmented {
+  border-color: #343434;
+}
+
+.clr-lzt .clr-swatches button:after {
+  box-shadow: inset 0 0 0 1px rgb(52, 52, 52,.3);
+}
+
+.clr-lzt input.clr-color {
+  color: #fff;
+  border-color: #343434;
+  border: none;
+  background-color: #343434;
+}
+
+.clr-lzt input.clr-color:focus {
+  border: 1px solid rgb(34, 142, 93);
+}
+
+.clr-lzt .clr-preview:after {
+  box-shadow: inset 0 0 0 1px rgb(52, 52, 52,.3);
+}
+
+.clr-lzt .clr-alpha,
+.clr-lzt .clr-alpha div,
+.clr-lzt .clr-swatches button,
+.clr-lzt .clr-preview:before {
+  background-image: repeating-linear-gradient(45deg, #666 25%, transparent 25%, transparent 75%, #888 75%, #888), repeating-linear-gradient(45deg, #888 25%, #444 25%, #444 75%, #888 75%, #888);
+}
+
+.clr-lzt .clr-segmented label:first-of-type {
+  border-radius: 5px 0 0 5px;
+}
+
+.clr-lzt .clr-segmented label:last-of-type {
+  border-radius: 0 5px 5px 0;
+}
+
+.clr-lzt .clr-close, .clr-clear {
+  border-radius: 5px;
+}
+
+.clr-lzt .clr-close {
+  background-color: rgb(34, 142, 93);
+}
