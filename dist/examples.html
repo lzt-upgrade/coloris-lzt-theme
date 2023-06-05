@@ -67,6 +67,17 @@
       border-radius: 5px;
     }
 
+    .lzt .clr-field input {
+      width: 32px;
+      height: 32px;
+    }
+
+    .lzt .clr-field button {
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+    }
+
     </style>
   </head>
   <body>
@@ -88,6 +99,10 @@
       <div class="example full">
         <p>Full size thumbnail</p>
         <input type="text" class="coloris instance3" value="#ffcc00">
+      </div>
+      <div class="example lzt">
+        <p>LZT thumbnail</p>
+        <input type="text" class="coloris instance4" value="rgb(34, 142, 93)">
       </div>
       <div class="example square" style="position: relative; top: 300px; padding-bottom: 30px;">
         <p>The dialog will appear on top of this field for lack of space under it.</p>
@@ -139,6 +154,15 @@
     Coloris.setInstance('.instance3', {
       theme: 'polaroid',
       swatchesOnly: true
+    });
+
+    Coloris.setInstance('.instance4', {
+      theme: 'lzt',
+      formatToggle: true,
+      closeButton: true,
+      clearButton: true,
+      alpha: true,
+      swatches: []
     });
 
     </script>
