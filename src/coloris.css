@@ -579,7 +579,7 @@ input.clr-color:focus {
 /** Lolzteam theme (by Toil) **/
 
 .clr-lzt {
-  background-color: #272727;
+  background-color: rgb(39, 39, 39);
 }
 
 .clr-lzt .clr-segmented {
@@ -598,7 +598,7 @@ input.clr-color:focus {
 }
 
 .clr-lzt input.clr-color:focus {
-  border: 1px solid rgb(34, 142, 93);
+  border: 1px solid #0daf77;
 }
 
 .clr-lzt .clr-preview:after {
@@ -620,10 +620,25 @@ input.clr-color:focus {
   border-radius: 0 5px 5px 0;
 }
 
+.clr-lzt .clr-segmented label:hover {
+  background-color: rgb(102, 102, 102, .35); /* #666 */
+}
+
+.clr-lzt .clr-segmented input:checked + label,
+.clr-lzt .clr-clear {
+  background-color: rgb(54, 54, 54);
+}
+
 .clr-lzt .clr-close, .clr-clear {
   border-radius: 5px;
 }
 
 .clr-lzt .clr-close {
-  background-color: rgb(34, 142, 93);
+  background-color: #0daf77;
+}
+
+.clr-lzt .clr-close:hover,
+.clr-clear:hover {
+  background-color: rgba(13, 175, 119, .8) !important;
+  transition: background-color .5s;
 }
