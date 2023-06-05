@@ -1,12 +1,10 @@
 
 # Coloris
 
-![Coloris in light, dark and polaroid themes](https://raw.githubusercontent.com/mdbassit/Coloris/gh-pages/images/coloris-light-dark-polaroid.jpg)
+![lzt theme](https://raw.githubusercontent.com/lzt-upgrade/coloris-lzt-theme/raw/images/colorpicker.png)
 
 A lightweight and elegant JavaScript color picker written in vanilla ES6.  
 Convert any text input field into a color field.
-
-[**View demo**](https://coloris.js.org/examples.html)
 
 ## Features
 
@@ -25,7 +23,7 @@ Convert any text input field into a color field.
 
 ### Basic usage
 
-Download the [latest version](https://github.com/mdbassit/Coloris/releases/latest), and add the script and style to your page:
+Download the [latest version](https://github.com/lzt-upgrade/coloris-lzt-theme/releases/latest), and add the script and style to your page:
 ```html
 <link rel="stylesheet" href="coloris.min.css"/>
 <script src="coloris.min.js"></script>
@@ -33,8 +31,8 @@ Download the [latest version](https://github.com/mdbassit/Coloris/releases/lates
 
 Or include from a CDN (not recommended in production):
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
-<script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lzt-upgrade/coloris-lzt-theme@latest/dist/coloris.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/lzt-upgrade/coloris-lzt-theme@latest/dist/coloris.min.js"></script>
 ```
 
 Then just add the data-coloris attribute to your input fields:
@@ -43,10 +41,6 @@ Then just add the data-coloris attribute to your input fields:
 ```
 
 That's it. All done!
-
-### What about NPM and TypeScript?
-
-Thanks to [@melloware](https://github.com/melloware), NPM and TypeScript support is available in a fork of this project. Head over to [@melloware's fork](https://github.com/melloware/coloris-npm) or to their [NPM repo](https://www.npmjs.com/package/@melloware/coloris) for more information.
 
 ### Customizing the color picker
 
@@ -95,7 +89,7 @@ Coloris({
   // Set to true to activate basic right-to-left support.
   rtl: false,
 
-  // Available themes: default, large, polaroid, pill (horizontal).
+  // Available themes: default, large, polaroid, pill (horizontal), lzt.
   // More themes might be added in the future.
   theme: 'default',
 
@@ -310,12 +304,12 @@ Coloris.close(true);
 
 Clone the git repo:
 ```bash
-git clone git@github.com:mdbassit/Coloris.git
+git clone git@github.com:lzt-upgrade/coloris-lzt-theme.git
 ```
 
 Enter the Coloris directory and install the development dependencies:
 ```bash
-cd Coloris && npm install
+cd coloris-lzt-theme && npm install
 ```
 
 Run the build script:
