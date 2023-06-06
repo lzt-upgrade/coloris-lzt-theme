@@ -915,10 +915,11 @@
 
   /**
    * Init the color picker.
+   * ! On update add "cont = undefined" param for init colorpicker with custom parent
    */
-  function init() {
+  function init(cont = undefined) {
     // Render the UI
-    container = undefined;
+    container = cont;
     picker = document.createElement('div');
     picker.setAttribute('id', 'clr-picker');
     picker.className = 'clr-picker';
@@ -1171,6 +1172,7 @@
   }
 
   // Expose the color picker to the global scope
+  // ! On update add "init: init" to methods for reinit color picker after remove
   window.Coloris = (() => {
     const methods = {
       init: init,
