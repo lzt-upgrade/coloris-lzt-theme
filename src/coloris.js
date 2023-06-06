@@ -1173,6 +1173,7 @@
   // Expose the color picker to the global scope
   window.Coloris = (() => {
     const methods = {
+      init: init,
       set: configure,
       wrap: wrapFields,
       close: closePicker,
