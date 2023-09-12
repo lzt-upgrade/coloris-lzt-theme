@@ -7,8 +7,9 @@
 (function (window, document, Math, undefined) {
   var ctx = document.createElement('canvas').getContext('2d');
   var currentColor = { r: 0, g: 0, b: 0, h: 0, s: 0, v: 0, a: 1 };
-  var container, picker, colorArea, colorAreaDims, colorMarker, colorPreview, colorValue, clearButton, closeButton,
-  hueSlider, hueMarker, alphaSlider, alphaMarker, currentEl, currentFormat, oldColor, keyboardNav;
+  var container,picker,colorArea,colorMarker,colorPreview,colorValue,clearButton,closeButton,
+  hueSlider,hueMarker,alphaSlider,alphaMarker,currentEl,currentFormat,oldColor,keyboardNav,
+  colorAreaDims = {};
 
   // Default settings
   var settings = {
@@ -316,6 +317,7 @@
 
       if (settings.focusInput || settings.selectInput) {
         colorValue.focus({ preventScroll: true });
+        colorValue.setSelectionRange(currentEl.selectionStart, currentEl.selectionEnd);
       }
 
       if (settings.selectInput) {
@@ -998,9 +1000,11 @@
     });
 
     addListener(colorValue, 'change', function (event) {
+      var value = colorValue.value;
+
       if (currentEl || settings.inline) {
-        setColorFromStr(colorValue.value);
-        pickColor();
+        var color = value === '' ? value : setColorFromStr(value);
+        pickColor(color);
       }
     });
 
@@ -1014,7 +1018,7 @@
       closePicker();
     });
 
-    addListener(document, 'click', '.clr-format input', function (event) {
+    addListener(getEl('clr-format'), 'click', '.clr-format input', function (event) {
       currentFormat = event.target.value;
       updateColor();
       pickColor();
